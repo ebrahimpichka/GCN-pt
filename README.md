@@ -13,12 +13,16 @@ This module computes the following expression as part message passing mechanism:
 
 where the `D⁻¹/²ÃD⁻¹/²` part is recieved as an input argument to the `forward` method in **sparse matrix tensor** format and the node features `H` is also recieved as an in*put argument to the `forward` method.
 
+---
+
 ### Graph Convolutional Network (GCN):
 The main Graph Convolutional Network module is implemented in `gcn.py` file as `GCN` class. The `forward` method performs a full two-layer GCN operation on the given input features based on [the paper](https://arxiv.org/abs/1609.02907) as shown below:
 
 ![graph convolution layer](https://github.com/ebrahimpichka/gcn-pt/blob/main/images/gcn.png)
 
 The module requies number of input features (`nfeat`), number of hidden features (`nhid`), number of output classes (`nclass`), dropout rate (`dropout`) and PyTorch device object (`device`) as input args for instantiation.
+
+---
 
 
 ### Tests:
