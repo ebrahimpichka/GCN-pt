@@ -7,11 +7,11 @@ PyTorch implementation of Graph Convolutional Networks (GCNs) based on [(Kipf & 
 ### Graph Convolution Layer:
 The Graph Convolution layer module is implemented in `gc_layer.py` file as `GraphConvolution` class. It follows the official PyTorch layer module interface.
 
-This module computes the following expression as part message passing mechanism:
+This module computes the following expression as part of message passing mechanism:
 
 ![graph convolution layer](https://github.com/ebrahimpichka/gcn-pt/blob/main/images/gclayer.png)
 
-where the `D⁻¹/²ÃD⁻¹/²` part is recieved as an input argument to the `forward` method in **sparse matrix tensor** format and the node features `H` is also recieved as an in*put argument to the `forward` method.
+where the `D⁻¹/²ÃD⁻¹/²` part is received as an input argument to the `forward` method in **sparse matrix tensor** format and the node features `H` is also recieved as an in*put argument to the `forward` method.
 
 ---
 
@@ -20,7 +20,7 @@ The main Graph Convolutional Network module is implemented in `gcn.py` file as `
 
 ![graph convolution layer](https://github.com/ebrahimpichka/gcn-pt/blob/main/images/gcn.png)
 
-The module requies number of input features (`nfeat`), number of hidden features (`nhid`), number of output classes (`nclass`), dropout rate (`dropout`) and PyTorch device object (`device`) as input args for instantiation.
+The module requires the number of input features (`nfeat`), number of hidden features (`nhid`), number of output classes (`nclass`), dropout rate (`dropout`), and PyTorch device object (`device`) as input args for instantiation.
 
 ---
 
